@@ -1,0 +1,103 @@
+#page-result {
+    background-color: #ffffff;
+}
+
+#page-result .tip {
+    position: relative;
+    margin: 1.4rem auto 1rem;
+    width: 6.4rem;
+    height: 3.3rem;
+}
+
+#page-result .tipText {
+    position: relative;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #333333;
+}
+
+#page-result .tip.success {
+    background-image: url("../img/success.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page-result .tip.fail {
+    background-image: url("../img/fail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page-result .tip.examine {
+    background-image: url("../img/examine.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page-result .tip.no-msg {
+    background-image: url("../img/no-msg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page-result .btn-continue {
+    position: relative;
+    margin: 1rem auto;
+    width: 3.5rem;
+    height: 1.4rem;
+    background-image: url("../img/v-code.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+#page-result .btn-download {
+    position: relative;
+    margin: 0 auto;
+    width: 3.47rem;
+    height: 1.4rem;
+    background-image: url("../img/btn-download.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#page-result .success-box{
+    margin: 1.2rem auto;
+    display: none;
+}
+#page-result .success-box p span{
+   width: 45%;
+   text-align: right;
+   display: inline-block;
+ }
+ #page-result .success-box .saleCode,  #page-result  .success-box .institutionCode{
+    text-align: left;
+}
+#page-result .success-box .text{
+    color: #aaaaaa;
+    text-align: center;
+    margin: 0.68rem auto 0.3rem;
+ }
+
+#page-result .vcode-box {
+    position: relative;
+    margin: 0 auto;
+    display: none;
+}
+
+#page-result .vcode {
+    position: relative;
+    width: 3.4rem;
+    height: 3.4rem;
+    margin: 0 auto;
+}
+#page-result .vcode img{
+   width: 100%;
+   height: 100%;
+   display: block;
+}
+#page-result .vcode-box .text{
+    font-size: 15px;
+    text-align: center;
+    line-height:20px;
+    margin-top: 0.4rem
+}

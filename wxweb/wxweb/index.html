@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta name="wxm:timeline_title" content="带你赚钱带你飞">
+    <!-- 默认微信分享：分享给好友的标题-->
+    <meta name="wxm:appmessage_title" content="带你赚钱带你飞">
+    <!-- 默认微信分享：分享给好友的详情-->
+    <meta name="wxm:appmessage_desc" content="邀请加盟，带你赚钱带你飞">
+    <meta name="wxm:img_url" content="">
+    <!--<meta name="wxm:link" content="http://hjb-dev.zrhuijin.com/">-->
+    <meta name="viewport"
+          content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1,target-densitydpi=device-dpi">
+    <!--微信浏览器内强制竖屏 portrait landscape-->
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true">
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="renderer" content="webkit"/>
+    <!--你在Windows Phone上的IE10和IE11里tap某元素时，会有一个小小的tap高亮效果，加上这个meta标签可以取消这种效果：-->
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <title>邀请加盟</title>
+    <script src="libs1/libs/libs.min.js?ver=2"></script>
+    <script src="libs1/js/sktap.min.js"></script>
+</head>
+<body>
+<script>
+    var partnercode = Sktap.queryString("partnercode");
+    localStorage.setItem("PartnerCode",partnercode)
+    var aa = localStorage.getItem("PartnerCode")
+    console.log(aa)
+    var psalecode = Sktap.queryString("psalecode");
+
+    window.location = "/api/auth?partnercode=" + partnercode + "&psalecode=" + psalecode;
+</script>
+</body>
+</html>

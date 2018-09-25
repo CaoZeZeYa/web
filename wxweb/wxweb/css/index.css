@@ -1,0 +1,56 @@
+@charset  “ utf-8 ” ;
+/ *
+//作者relaxWang从2015/12开始
+//最后修改2016/12/13
+//版本0.15
+//移动端样式定义，兼容PC端浏览器
+* /
+
+/ *重置* /
+* { / * font-family：“Microsoft YaHei”，“微软雅黑”，“Helvetica Neue”，Helvetica，STHeiTi，sans-serif; * /  font-family：tahoma，arial，' Hiragino Sans GB '，' \ 5b8b \ 4f53 '，sans-seri; box-sizing：border-box ;}
+html，body，h1，h2，h3，h4，h5，h6，dl，dt，dd，p，ul，li，form，iframe，object，input { margin：0 px ; 填充：0 px ;}
+一个 { text-decoration：none ;}
+h1，h2，h3，h4，h5，h6，强 { font-weight：bold ;}
+ul，ol，dl { list-style：none  outside  none ;}
+输入，textarea，选择 { font-family：inherit ;}
+a ：有效，a ：焦点，输入：有效，输入：焦点，按钮：有效，按钮：焦点 { 轮廓：无 ; -moz-outline：none ;} / *去掉移动端firefox a标签的虚线框PC chrome文本输入框的边框焦点时候的颜色* /
+input [ type = “ button ” ] ::  -  moz-focus-inner，input [ type = “ submit ” ] ::  -  moz-focus-inner，button ::  -  moz-focus-inner { border：none ;} / *去掉移动端firefox按钮获得焦点显示虚线框的样式* /
+表 { border-collapse：collapse ; border-spacing：0 ; 宽度：100 ％ ;}
+html，body { position：relative ; 身高：100 ％ ; width：100 ％ ;}   / *注意某些版本的IE中（IE9）会导致iframe的内容定位错误，请参考是否去掉该属性，或者为iframe增加relative的属性* /
+iframe { width：100 ％ ; 身高：100 ％ ; 位置：相对 ;}
+/ *清除现代IE浏览器的输入框和密码框的默认交互按钮* /
+::  -  ms-clear，::  -  ms-reveal { display：none ;}
+/ *针对不支持语义化标签浏览器做的应对* /
+文章，一边，对话框，页脚，标题，部分，页脚，导航，图，菜单 { display：block }
+/ * chrome内核浏览器对象：指针的样式对象，点击触发样式中会有浅蓝色背景框，用该样式去除* /
+/ * -webkit-tap-highlight-color：rgba（255,255,255,0）; * /
+/ *重置结束* /
+
+
+body { min-width：1280 px ;}
+.container { padding：30 px  50 px  100 px ;}
+.container  h3 { margin：10 px  0 ;}
+.container  h2 { 身高：36 像素 ; 行高：36 像素 ; 保证金：20 px  0 ;}
+.container  a { margin-left：20 px ; 颜色：＃428bca ; font-size：16 px ; font-weight：700 ;}
+.container  a ：hover { color：＃2a6496 ; 文字装饰：下划线 ;}
+pre { background-color：＃f5f5f5 ; border：1 px  solid  #ccc ; 填充：10 像素 ; 溢出：自动 ; 颜色：＃c82829 ;}
+pre  span { 颜色：＃718c00 ;}
+pre  span .b { color：＃0086b3 ;}
+p { padding-left：50 px ;}
+p  a { color：＃428bca ;}
+p  a ：hover { color：＃2a6496 ; 文字装饰：下划线 ;}
+表 { 宽度：90 ％ ; background-color：＃eaeff2 ;}
+table  tr  th { padding：10 px ;}
+table  tr  td { padding：10 px  10 px  10 px  20 px ; background-color：#fff ; border：1 px  solid  ＃eaeff2 ;}
+table  tr  td ：first-child { background-color：＃eaeff2 ; border-color：#fff ;}
+.paramItem { overflow：hidden ;}
+.paramItem  >  strong { display：block ; font-weight：normal ; 颜色：#fff ; 填充：5 px  10 px ; background-color：＃39A4DC ; 保证金：10 px  0 ;}
+.paramItem  >  div { overflow：hidden ;}
+
+canvas { border：1 px  solid  #ccc ;}
+img { border：1 px  solid  #ccc ;}
+按钮 { padding：5 px  15 px ; border：1 px  solid  #ccc ; 颜色：＃666 ; background-color：#fff ; border-radius：6 px ;}
+
+
+
+

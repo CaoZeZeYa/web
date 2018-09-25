@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta name="wxm:timeline_title" content="带你赚钱带你飞">
+    <!-- 默认微信分享：分享给好友的标题-->
+    <meta name="wxm:appmessage_title" content="带你赚钱带你飞">
+    <!-- 默认微信分享：分享给好友的详情-->
+    <meta name="wxm:appmessage_desc" content="邀请加盟，带你赚钱带你飞">
+    <meta name="wxm:img_url" content="">
+    <meta name="viewport"
+          content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1,target-densitydpi=device-dpi">
+    <!--微信浏览器内强制竖屏 portrait landscape-->
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true">
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="renderer" content="webkit"/>
+    <!--你在Windows Phone上的IE10和IE11里tap某元素时，会有一个小小的tap高亮效果，加上这个meta标签可以取消这种效果：-->
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <title>邀请加盟</title>
+    <script src="libs1/js/adapt.js"></script>
+    <script src="libs1/libs/libs.min.js?ver=2"></script>
+    <script src="libs1/js/sktap.min.js"></script>
+    <link rel="stylesheet" href="libs1/css/sktap.min.css">
+    <link rel="stylesheet" href="css1/result.css">
+    <link rel="stylesheet" href="css1/common.css">
+</head>
+<body id="page-result">
+<div id="app">
+    <div class="tip"></div>
+    <p class="tipText"></p>
+    <div class="btn-continue"></div>
+    <div class="success-box">
+        <p><span>工号：</span><span class="saleCode"></span></p>
+        <p><span>机构号：</span><span class="institutionCode"></span></p>
+        <p class="text">请点击下方按钮，下载app并完成注册</p>
+        <div class="btn-download"></div>
+    </div>
+    <div class="vcode-box">
+        <div class="vcode">
+                <img src="img/v-code.png" alt="">
+        </div>
+        <p class="text">长按下方二维码关注公众号<br>获取审核通知</p>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".btn-continue").tap(function () {
+            window.location = "completeMsg.html";
+        });
+    })
+</script>
+<script src="js/ServiceAPI.js"></script>
+<script src="js/commonAjax.js"></script>
+<script src="js/result.js"></script>
+</body>
+</html>
