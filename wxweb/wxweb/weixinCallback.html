@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>邀请加盟</title>
+    <script src="libs1/libs/libs.min.js?ver=1"></script>
+    <script src="libs1/js/sktap.min.js"></script>
+</head>
+
+<body>
+<script>
+    $(function () {
+
+        var code = Sktap.queryString("code");
+        var state = Sktap.queryString("state");
+
+        $.ajax({
+            type: "GET",
+            url: "/api/authCallBack?code=" + code + "&state=" + state,
+            dataType: "json",
+            success: function (res) {
+                console.log(res);
+                if (res.code == 0) {
+                    sessionStorage.setItem("token", res.token);  //存储token
+                    var partnercode = res.partnercode;
+                    var psalecode = res.psalecode;
+                    console.log(partnercode, psalecode);
+
+                    $.ajax({
+                        type: "GET",
+                        url: "/api/checkStatus",
+                        dataType: "json",
+                        headers: {
+                            Accept: "application/json; charset=utf-8",
+                            token: "" + res.token
+                        },
+                        success: function (res) {
+                            console.log(res)
+                            if (res.code == 0) {
+                                if (res.status == -1) {  //未注册
+                                    window.location = "login.html?partnercode=" + partnercode + "&psalecode=" + psalecode;
+                                } else { //已注册
+                                    window.location = "result.html"
+                                }
+                            } else {
+                                alert(res.msg)
+                            }
+
+                        }, error: function (res) {
+                            alert(res.msg)
+                        }
+                    });
+
+                } else {
+                    alert(res.msg);
+                }
+            }, error: function (res) {
+                alert(res.msg)
+            }
+        });
+    })
+</script>
+</body>
+
+</html>

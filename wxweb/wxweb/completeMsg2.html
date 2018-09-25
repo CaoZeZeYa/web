@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta name="wxm:timeline_title" content="带你赚钱带你飞">
+    <!-- 默认微信分享：分享给好友的标题-->
+    <meta name="wxm:appmessage_title" content="带你赚钱带你飞">
+    <!-- 默认微信分享：分享给好友的详情-->
+    <meta name="wxm:appmessage_desc" content="邀请加盟，带你赚钱带你飞">
+    <meta name="wxm:img_url" content="">
+    <meta name="viewport"
+          content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1,target-densitydpi=device-dpi">
+    <!--微信浏览器内强制竖屏 portrait landscape-->
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true">
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="renderer" content="webkit"/>
+    <!--你在Windows Phone上的IE10和IE11里tap某元素时，会有一个小小的tap高亮效果，加上这个meta标签可以取消这种效果：-->
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <title>邀请加盟</title>
+    <script src="libs1/js/adapt.js"></script>
+    <script src="libs1/libs/libs.min.js?ver=1"></script>
+    <script src="libs1/js/sktap.min.js"></script>
+    <link rel="stylesheet" href="libs1/css/sktap.min.css">
+    <link rel="stylesheet" href="css1/completeMsg.css">
+    <link rel="stylesheet" href="css1/common.css">
+</head>
+<body id="page-completeMsg">
+<div id="data-loading">
+    <div class="spin-loading"></div>
+</div>
+<div id="app">
+    <div class="wrapper">
+        <div class="baseInfo">
+            <p>担保人：<input type="text" placeholder="请输入担保人真实姓名，选填" maxlength="18" class="username"/></p>
+            <!--<p>展业证：<input type="text" placeholder="请输入担保人的展业证号，选填" maxlength="18" class="workId1"/></p>-->
+            <p>执业证：<input type="tel" placeholder="请输入担保人执业证号，选填" maxlength="20" class="workId"/></p>
+        </div>
+        <div class="cardInfo">
+            <p>证件照片</p>
+            <div class="cardInfo-box">
+               <div class="cardItem1 item4 ">
+                   <input type="file" id="upload4"  accept="image/*"  onchange="UploadFile(4)"/>
+                   <img src="" alt="">
+               </div>
+            </div>
+        </div>
+        <div class="btn-submit" style="width: 7.04rem;margin: 0 auto;"></div>
+    </div>
+</div>
+
+<script src="js/ServiceAPI.js"></script>
+<script src="js/commonAjax.js"></script>
+<script src="js/completeMsg.js"></script>
+</body>
+</html>
